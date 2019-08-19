@@ -1,0 +1,14 @@
+def my_loop(x):
+    loop = range(x)
+    for i in loop:
+        print(i)
+
+print(my_loop(10))
+
+def my_reverse_loop(x):
+    loop = range(x)
+    r = loop[::-1]
+    for i in r:
+        print(i)
+
+print(my_reverse_loop(5))
