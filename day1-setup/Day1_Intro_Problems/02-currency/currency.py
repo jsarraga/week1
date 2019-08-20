@@ -34,4 +34,4 @@ def currency_converter(amount):
     print(pennies, " pennies")
     
 
-print(currency_converter(input()))
+currency_converter(input("How much are you converting? " ))

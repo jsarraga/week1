@@ -3,12 +3,13 @@ def my_loop(x):
     for i in loop:
         print(i)
 
-print(my_loop(10))
+my_loop(10)
 
 def my_reverse_loop(x):
-    loop = range(x)
+    loop = range(x+1)
+    print(loop)
     r = loop[::-1]
     for i in r:
         print(i)
 
-print(my_reverse_loop(5))
+my_reverse_loop(5)
