@@ -1,6 +1,6 @@
 def age_to_time(x):
     months = x * 12
-    days = x * 365
+    days = int(months * (365.242/12))
     hours = x * 8760
     minutes = x * 525600
 
