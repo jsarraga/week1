@@ -1,10 +1,11 @@
-with open('article.txt', 'r') as f:
-    words = f.read()
+from collections import Counter 
+
+
+def word_stats(x, n):
+    f = open(x, "r")
+    words = f.read().lower()
     word_list = words.split()
-    most_occur = 0
-    i = word_list[0]
-    for word in word_list:
-        if word_list.count(word) > most_occur:
-            most_occur = word_list.count(word)
-            i = word         
-    print(i, most_occur) 
+    x = Counter(word_list).most_common(n)
+    print(x)
+
+word_stats("article.txt", 10)
