@@ -20,17 +20,37 @@ m_print(mylist)
 input()
 
 def rowsum(alist):
-    for i in alist:
-        summed_list = [sum(i) for i in alist]
+    summed_list = [sum(i) for i in alist]
     return summed_list
 
-print(rowsum(mylist))
+#print(rowsum(mylist))
+rowsumlist = rowsum(mylist)
+print("Row Sums: ", *rowsumlist)
+
+##alternate way
+# def row_summer(dataset):
+#     row_sums = []
+#     for i in range(len(dataset)):
+#         for j in dataset:
+#             rowsums.append(sum(dataset[i]))
+#             break
 
 def colsum(alist):
     colsum =  list(map(sum, zip(*mylist)))
     return colsum
 
-print(colsum(mylist))
+#print(colsum(mylist))
+colsumlist = colsum(mylist)
+print("Column Sums: ", *colsumlist)
+
+#alternate way
+# def column_summer(dataset):
+#     column_sums = []
+#     for i in range(len(dataset[0]))
+#         sum = 0
+#         for data_list in dataset:
+#             sum += data_list[i]
+#         column_sums.append(sum)
 
 input()
 
@@ -42,7 +62,7 @@ def sorted_matrix1(asumlist, alist):
     for summed, row in zip(asumlist, alist):
         dict1[summed] = [row]
     for key in sorted(dict1.keys()) :
-        print(dict1[key])
+        print(*dict1[key])
 
 sorted_matrix1(row_summed, mylist)
 
@@ -56,8 +76,6 @@ def sorted_matrix2(asumlist, alist):
     for summed, col in zip(asumlist, alist):
         dict2[summed] = [col]
     for key in sorted(dict2.keys()) :
-        print(dict2[key])
+        orint(*dict2[key])
 
-sorted_matrix2(col_summed, mylist)
-
-
+print(sorted_matrix2(col_summed, mylist))
