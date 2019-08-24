@@ -76,6 +76,6 @@ def sorted_matrix2(asumlist, alist):
     for summed, col in zip(asumlist, alist):
         dict2[summed] = [col]
     for key in sorted(dict2.keys()) :
-        orint(*dict2[key])
+        print(*dict2[key])
 
-print(sorted_matrix2(col_summed, mylist))
+sorted_matrix2(col_summed, mylist)
