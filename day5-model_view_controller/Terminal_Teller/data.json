@@ -1,10 +1,20 @@
 {
-  "10011": {
-    "pin": "123456",
-    "balance": 234.20000000000005
+  "1": {
+    "first name": 1,
+    "last name": 1,
+    "pin": 1,
+    "balance": 0
   },
-  "10012": {
-    "pin": "acbdef",
-    "balance": 10.2
+  "7701": {
+    "first name": "Justin",
+    "last name": "Sarraga",
+    "pin": "1234",
+    "balance": 46000.0
+  },
+  "8306": {
+    "first name": "steph",
+    "last name": "curry",
+    "pin": "1",
+    "balance": 0.0
   }
 }

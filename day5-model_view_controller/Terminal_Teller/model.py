@@ -35,8 +35,19 @@ def check_balance(account):
     balance = data[account]["balance"]
     return balance
 
+def create_acct(account, first_name, last_name, create_pin):
+        data[account] = {}  
+        data[account]["first name"] = first_name
+        data[account]['last name'] = last_name
+        data[account]['pin'] = create_pin
+        data[account]['balance'] = 0
+        return data[account]
+
 if __name__ == "__main__":
     load()
-    deposit("1", 100)
+    create_acct(1,1,1,1)
+    print(data)
+    save()
+
    
    
