@@ -9,8 +9,9 @@ def count_words(filename):
         return dict_count
         
 
-mydict = count_words('test.txt')
-sorted_dict = mydict.keys()
-for key, value in 
+def most_common(word_counts, n):
+        x = Counter(word_counts).most_common(n)
+        print(x)
 
-print(sorted_dict)
+most_common(count_words('article.txt'), 10)
+
