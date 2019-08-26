@@ -11,7 +11,7 @@ def readcurrency(filename):
                         # line_dict['symbol'] = line[0]
                         # line_dict['rate'] = line[1]
                 for key,value in line_dict.items():
-                        line_list.append({key,value})
+                        line_list.append({'symbol':key, 'rate': value})
 
                         #need to name the keys and values to "symbol" and "rate"
         
